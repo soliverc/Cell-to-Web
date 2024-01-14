@@ -15,6 +15,6 @@ function openTabsWithDelay(rows, delay) {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.excelData) {
         let rows = message.excelData.split('\n');
-        openTabsWithDelay(rows, 3000); // 3000 milliseconds delay (3 seconds)
+        openTabsWithDelay(rows, 500); // 500 milliseconds delay (0.5 seconds)
     }
 });

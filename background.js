@@ -5,7 +5,7 @@ function openTabsWithDelay(rows, delay) {
         if (index < rows.length) {
             let query = rows[index].trim(); // Trim whitespace from the row
             if (query) { // Check if the row is not empty
-                chrome.tabs.create({ url: `https://www.google.com/search?q=${encodeURIComponent(query)}` });
+                chrome.tabs.create({ url: `https://www.google.com/search?q=${encodeURIComponent(query)}` ,  active:false});
             }
             index++;
             setTimeout(openNextTab, delay); // Set delay before opening next tab

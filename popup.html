@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Excel Row Googler</title>
+    <title>Cell to Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Updated font-family */
+            margin: 0;
+            text-align: center;font-weight:200;
+            width: 300px;
+        }
+        #header {
+            font-size: 24px;
+            margin-bottom: 10px; margin-top: 10px;
+            color: #544caf;
+        }
+        #instructions {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        #excelData {
+            width: 90%;
+            height: 100px;
+            margin: 0 auto 20px auto;
+            display: block;
+        }
+        #googleBtn {
+            padding: 10px 20px;
+            background-color: #544caf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+        }
+        #googleBtn:hover {
+            background-color: #544caf;
+        }
+        #infoLink {
+            display: block;
+            margin-top: 20px; margin-bottom: 10px;
+            color: #008CBA;
+            text-decoration: none;
+        }
+        #infoLink:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <textarea id="excelData" rows="10" cols="30"></textarea>
-    <button id="googleBtn">Google Rows</button>
+    <div id="header">Cell to Web</div>
+    <div id="instructions">Paste your Excel column here:</div>
+    <textarea id="excelData"></textarea>
+    <button id="googleBtn">Send to Google</button>
+    <a href="https://github.com/soliverc/Cell-to-Web/tree/main" id="infoLink" target="_blank">
+        <img src="icons/info.png" alt="Info" style="width:20px;height:20px;"/>
+    </a>
     <script src="popup.js"></script>
 </body>
 </html>

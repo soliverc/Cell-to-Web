@@ -37,13 +37,3 @@ Contributions to the Cell to Web extension are welcome! Here's how you can contr
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any queries or further information, please reach out to [Your Contact Information].
-
-## Acknowledgments
-
-- Thanks to all the contributors who spend time to improve this project.
-- Special thanks to [Any Special Mentions].
-
